@@ -18,4 +18,6 @@ for root, dirs, files in os.walk(sys.argv[1]):
 							if "//" not in line:
 								print "alert in like "+ str(file) +" on line " + str(count)
 								print "full line" + str(line)
+					if "console.log" in line:
+							print "console loggin in "+str(file) + "on line " + str(count)
 				x.close()
